@@ -84,12 +84,37 @@ LV_IMG_DECLARE(spaceman_16);
 LV_IMG_DECLARE(spaceman_17);
 LV_IMG_DECLARE(spaceman_18);
 LV_IMG_DECLARE(spaceman_19);
+LV_IMG_DECLARE(spaceman_20);
+LV_IMG_DECLARE(spaceman_21);
+LV_IMG_DECLARE(spaceman_22);
+LV_IMG_DECLARE(spaceman_23);
+LV_IMG_DECLARE(spaceman_24);
+LV_IMG_DECLARE(spaceman_25);
+LV_IMG_DECLARE(spaceman_26);
+LV_IMG_DECLARE(spaceman_27);
+LV_IMG_DECLARE(spaceman_28);
+LV_IMG_DECLARE(spaceman_29);
+LV_IMG_DECLARE(spaceman_30);
+LV_IMG_DECLARE(spaceman_31);
+LV_IMG_DECLARE(spaceman_32);
+LV_IMG_DECLARE(spaceman_33);
+LV_IMG_DECLARE(spaceman_34);
+LV_IMG_DECLARE(spaceman_35);
+LV_IMG_DECLARE(spaceman_36);
+LV_IMG_DECLARE(spaceman_37);
+LV_IMG_DECLARE(spaceman_38);
 
-const lv_img_dsc_t *spaceman_imgs[] = {&spaceman_00, &spaceman_01, &spaceman_02, &spaceman_03,
-                                       &spaceman_04, &spaceman_05, &spaceman_06, &spaceman_07,
-                                       &spaceman_08, &spaceman_09, &spaceman_10, &spaceman_11,
-                                       &spaceman_12, &spaceman_13, &spaceman_14, &spaceman_15,
-                                       &spaceman_16, &spaceman_17, &spaceman_18, &spaceman_19};
+const lv_img_dsc_t *spaceman_imgs[] = {
+    &spaceman_00, &spaceman_01, &spaceman_02, &spaceman_03,
+    &spaceman_04, &spaceman_05, &spaceman_06, &spaceman_07,
+    &spaceman_08, &spaceman_09, &spaceman_10, &spaceman_11,
+    &spaceman_12, &spaceman_13, &spaceman_14, &spaceman_15,
+    &spaceman_16, &spaceman_17, &spaceman_18, &spaceman_19,
+    &spaceman_20, &spaceman_21, &spaceman_22, &spaceman_23,
+    &spaceman_24, &spaceman_25, &spaceman_26, &spaceman_27,
+    &spaceman_28, &spaceman_29, &spaceman_30, &spaceman_31,
+    &spaceman_32, &spaceman_33, &spaceman_34, &spaceman_35,
+    &spaceman_36, &spaceman_37, &spaceman_38};
 
 #elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_POKEMON)
 LV_IMG_DECLARE(pokemon_00);
@@ -183,7 +208,7 @@ void draw_animation(lv_obj_t *canvas, struct zmk_widget_screen *widget) {
 #elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_CAT)
     lv_animimg_set_src(art, (const void **)cat_imgs, 8);
 #elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_SPACEMAN)
-    lv_animimg_set_src(art, (const void **)spaceman_imgs, 20);
+    lv_animimg_set_src(art, (const void **)spaceman_imgs, 39);
 #elif IS_ENABLED(CONFIG_NICE_OLED_WIDGET_ANIMATION_PERIPHERAL_POKEMON)
     lv_animimg_set_src(art, (const void **)pokemon_imgs, 48);
 #else
